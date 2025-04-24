@@ -27,6 +27,7 @@ echo "📦 正在初始化项目 '$PROJECT_NAME' 到目录 '$TARGET_DIR'..."
 mkdir -p "$TARGET_DIR"
 cp -vR "$TEMPLATE_DIR/"* "$TARGET_DIR" | awk -F '->' '{ print $2 }'
 mkdir -p "$TARGET_DIR"/work/html
+mkdir -p "$TARGET_DIR"/logs
 
 # --- 设置启动脚本可执行 ---
 chmod +x "$TARGET_DIR/start.sh"
