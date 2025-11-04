@@ -34,5 +34,5 @@ chmod +x "$TARGET_DIR/start.sh"
 
 echo "✅ 初始化完成。你可以运行:"
 echo ""
-echo "  cd $TARGET_DIR && ./start.sh"
+echo -e "  \e[92;1m$ cd $TARGET_DIR && ./start.sh\e[0m"
 echo ""
